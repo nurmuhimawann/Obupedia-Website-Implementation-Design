@@ -3,9 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-    --main-color: #0ac05e;
-    --black: #e2e8f0;
-    --bg: #fafafa;
+    --main-color: #0AC05E;
+    --secondary: #E2E8F0;
+    --bg: #FAFAFA;
+    --white: #FFFFFF;
     --border: 0.1rem solid rgba(255, 255, 255, 0.952);
 }
 
@@ -67,7 +68,7 @@ section {
     display: inline-block;
     padding: 0.9rem 3rem;
     font-size: 1.7rem;
-    color: #fff;
+    color: var(--white);
     background: var(--main-color);
     cursor: pointer;
 }
@@ -143,8 +144,10 @@ section {
     height: 100%;
     width: 100%;
     font-size: 1.6rem;
-    color: var(--black);
+    color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--main-color);
     padding: 1rem;
+    margin-right: 12px;
     text-transform: none;
 }
 
@@ -152,7 +155,7 @@ section {
     cursor: pointer;
     font-size: 2.2rem;
     margin-right: 1.5rem;
-    color: var(--black);
+    color: var(--secondary);
 }
 
 .header .search-form label:hover {
@@ -163,9 +166,9 @@ section {
     position: absolute;
     top: 100%;
     right: -100%;
-    height: calc(100vh - 9.5rem);
+    height: calc(100vh - 15rem);
     width: 35rem;
-    background: #fff;
+    background: #24262b;
     padding: 0 1.5rem;
 }
 
@@ -187,7 +190,7 @@ section {
     right: 1rem;
     font-size: 2rem;
     cursor: pointer;
-    color: var(--black);
+    color: var(--secondary);
 }
 
 .header .cart-items-container .cart-item .fa-times:hover {
@@ -200,7 +203,7 @@ section {
 
 .header .cart-items-container .cart-item .content h3 {
     font-size: 2rem;
-    color: var(--black);
+    color: var(--secondary);
     padding-bottom: 0.5rem;
 }
 
@@ -212,6 +215,13 @@ section {
 .header .cart-items-container .btn {
     width: 100%;
     text-align: center;
+    background-color: var(--white);
+    color: var(--main-color);
+}
+
+.header .cart-items-container .btn:hover {
+    background: var(--main-color);
+    color: var(--white);
 }
 
 /* header nav ends */
@@ -268,7 +278,7 @@ section {
 .about .row {
     display: flex;
     align-items: center;
-    background: #fff;
+    background: var(--white);
     flex-wrap: wrap;
     border-radius: 25px;
     margin-bottom: 50px;
@@ -307,7 +317,7 @@ section {
 /* products menu section starts */
 
 #menu {
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .menu .box-container {
@@ -351,22 +361,22 @@ section {
     display: inline-block;
     padding: 0.9rem 3rem;
     font-size: 1.7rem;
-    color: #fff;
+    color: var(--white);
     cursor: pointer;
 }
 
 .menu .box-container .box:hover {
     background: var(--main-color);
-    color: #fafafa;
+    color: var(--bg);
 }
 
 .menu .box-container .box:hover>h3,
 .menu .box-container .box:hover>.price {
-    color: #fafafa;
+    color: var(--bg);
 }
 
 .menu .box-container .box:hover>.btn {
-    background: #fff;
+    background: var(--white);
     color: var(--main-color);
 }
 
@@ -405,7 +415,7 @@ section {
 
 .products .box-container .box .icons a:hover {
     background: var(--main-color);
-    color: #fff;
+    color: var(--white);
     border-radius: 10px;
 }
 
@@ -462,7 +472,7 @@ section {
     border: 1px solid whitesmoke;
     text-align: center;
     padding: 3rem 2rem;
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .review .box-container .box p {
@@ -518,7 +528,7 @@ section {
 .contact .row form h3 {
     text-transform: uppercase;
     font-size: 3.5rem;
-    color: #fff;
+    color: var(--white);
     margin: 0 0 25px 0;
 }
 
@@ -548,12 +558,12 @@ section {
 
 .contact .row form .btn {
     background-color: var(--main-color);
-    color: #fff;
-    border: 1px solid #fff;
+    color: var(--white);
+    border: 1px solid var(--white);
 }
 
 .contact .row form .btn:hover {
-    background-color: #fff;
+    background-color: var(--white);
     color: var(--main-color);
 }
 
@@ -576,7 +586,7 @@ section {
 
 .blogs .box-container .box {
     border: 1px solid whitesmoke;
-    background-color: #fff;
+    background-color: var(--white);
     margin: 0 20px 0 20px;
 }
 
@@ -666,7 +676,7 @@ section {
 }
 
 .cta-text h4 {
-    color: #fff;
+    color: var(--white);
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 2px;
@@ -746,7 +756,7 @@ section {
 
 .footer-col h4 {
     font-size: 18px;
-    color: #ffffff;
+    color: var(--white);
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -771,7 +781,7 @@ section {
 .footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
-    color: #ffffff;
+    color: var(--white);
     text-decoration: none;
     font-weight: 300;
     color: #bbbbbb;
@@ -780,7 +790,7 @@ section {
 }
 
 .footer-col ul li a:hover {
-    color: #ffffff;
+    color: var(--white);
     padding-left: 8px;
 }
 
@@ -793,13 +803,13 @@ section {
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #ffffff;
+    color: var(--white);
     transition: all 0.5s ease;
 }
 
 .footer-col .social-links a:hover {
     color: #24262b;
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 .copyright-area {
@@ -867,7 +877,7 @@ section {
         position: absolute;
         top: 100%;
         right: -100%;
-        background: #fff;
+        background: var(--white);
         width: 30rem;
         height: calc(100vh - 9.5rem);
     }
@@ -877,7 +887,7 @@ section {
     }
 
     .header .navbar a {
-        color: var(--black);
+        color: var(--secondary);
         display: block;
         margin: 1.5rem;
         padding: 0.5rem;
@@ -910,4 +920,4 @@ section {
     }
 }
 
-/* responsive */
+/* responsive css ends */
