@@ -1,4 +1,4 @@
-/* Start Main CSS */
+/* main css starts */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -37,7 +37,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #0ac05e;
+    background: var(--main-color);
     border-radius: 5rem;
 }
 
@@ -72,22 +72,18 @@ section {
     cursor: pointer;
 }
 
-/* .btn:hover{
-    letter-spacing: .2rem;
-} */
+/* main css ends */
 
-/* End Main CSS */
 
-/* Start Header Nav */
+
+/* header nav starts */
 
 .header {
-    /* background: var(--bg); */
     background: #f7f7f7;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 7%;
-    /* border-bottom: var(--border); */
     position: fixed;
     top: 0;
     left: 0;
@@ -130,7 +126,7 @@ section {
     position: absolute;
     top: 115%;
     right: 7%;
-    background: #0ac05e;
+    background: var(--main-color);
     width: 50rem;
     height: 5rem;
     display: flex;
@@ -218,9 +214,11 @@ section {
     text-align: center;
 }
 
-/* END Header */
+/* header nav ends */
 
-/* Start Jumbotron */
+
+
+/* home section starts */
 
 .home {
     min-height: 100vh;
@@ -239,8 +237,8 @@ section {
 
 .home .content h3 {
     font-size: 6rem;
-    /*text-transform: capitalize;*/
-    color: #0ac05e;
+    text-transform: capitalize;
+    color: var(--main-color);
 }
 
 .home .content span {
@@ -250,15 +248,18 @@ section {
 
 .home .content p {
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 1.8;
-    padding: 1rem 0 3rem 0;
-    color: #313131;
+    padding: 1rem 0 2rem 0;
+    color: grey;
+    text-transform: none;
 }
 
-/* End Jumbotron */
+/* home section ends */
 
-/* Start About Us */
+
+
+/* about section starts */
 
 .about h1 {
     margin: 30px 0 15px 0;
@@ -267,7 +268,6 @@ section {
 .about .row {
     display: flex;
     align-items: center;
-    /* background:var(--black); */
     background: #fff;
     flex-wrap: wrap;
     border-radius: 25px;
@@ -285,12 +285,12 @@ section {
 
 .about .row .content {
     flex: 1 1 45rem;
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
 .about .row .content h3 {
     font-size: 3rem;
-    color: #0ac05e;
+    color: var(--main-color);
 }
 
 .about .row .content p {
@@ -300,9 +300,11 @@ section {
     line-height: 1.8;
 }
 
-/* End About Us */
+/* about section ends */
 
-/* Start Menu */
+
+
+/* products menu section starts */
 
 #menu {
     background-color: #fff;
@@ -319,8 +321,6 @@ section {
     background-color: #f7f7f8;
     border-radius: 20px;
     text-align: center;
-    /* border:var(--border);  */
-    /* border: .8px solid #0AC05E; */
 }
 
 .menu .box-container .box img {
@@ -352,29 +352,29 @@ section {
     padding: 0.9rem 3rem;
     font-size: 1.7rem;
     color: #fff;
-    /* background: #aaa; */
     cursor: pointer;
 }
 
 .menu .box-container .box:hover {
-    background: #0ac05e;
+    background: var(--main-color);
     color: #fafafa;
 }
 
 .menu .box-container .box:hover>h3,
 .menu .box-container .box:hover>.price {
-    /* color:var(--black);  */
     color: #fafafa;
 }
 
 .menu .box-container .box:hover>.btn {
     background: #fff;
-    color: #0ac05e;
+    color: var(--main-color);
 }
 
-/* End Menu */
+/* products menu section ends */
 
-/* Start Product */
+
+
+/* special products section starts */
 
 .products h1 {
     margin: 20px 0 10px 0;
@@ -388,10 +388,8 @@ section {
 
 .products .box-container .box {
     text-align: center;
-    /* border:var(--border); */
     padding: 2rem;
-    /* background-color: #f7f7f8; */
-    border: 1px solid #0ac05e;
+    border: 1px solid var(--main-color);
     margin: 0 5px 0 5px;
 }
 
@@ -400,10 +398,8 @@ section {
     width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
-    /* border:var(--border); */
-    /* color:black; */
     margin: 0.3rem;
-    border: 1px solid #0ac05e;
+    border: 1px solid var(--main-color);
     color: rgba(0, 0, 0, 0.7);
 }
 
@@ -446,9 +442,11 @@ section {
     font-size: 1.5rem;
 }
 
-/* End Product */
+/* special products section ends */
 
-/* Start Review */
+
+
+/* review section starts */
 
 .review h1 {
     margin: 20px 0 10px 0;
@@ -461,7 +459,6 @@ section {
 }
 
 .review .box-container .box {
-    /* border:var(--border); */
     border: 1px solid whitesmoke;
     text-align: center;
     padding: 3rem 2rem;
@@ -493,14 +490,15 @@ section {
     color: var(--main-color);
 }
 
-/* End Review */
+/* review section ends */
 
-/* Start Contact */
+
+
+/* contact section starts */
 
 .contact .row {
     display: flex;
-    /* background:var(--black); */
-    background: #0ac05e;
+    background: var(--main-color);
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -529,13 +527,12 @@ section {
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    /* background:var(--bg); */
     background: #f7f7f7;
     border: var(--border);
 }
 
 .contact .row form .inputBox span {
-    color: #0ac05e;
+    color: var(--main-color);
     font-size: 2rem;
     padding-left: 2rem;
 }
@@ -550,19 +547,21 @@ section {
 }
 
 .contact .row form .btn {
-    background-color: #0ac05e;
+    background-color: var(--main-color);
     color: #fff;
     border: 1px solid #fff;
 }
 
 .contact .row form .btn:hover {
     background-color: #fff;
-    color: #0ac05e;
+    color: var(--main-color);
 }
 
-/* End Contact */
+/* contact section ends */
 
-/* Start Artikel Blog */
+
+
+/* article section starts */
 
 .blogs h1 {
     margin: 25px 0 10px 0;
@@ -576,7 +575,6 @@ section {
 }
 
 .blogs .box-container .box {
-    /* border: var(--border); */
     border: 1px solid whitesmoke;
     background-color: #fff;
     margin: 0 20px 0 20px;
@@ -630,12 +628,13 @@ section {
     padding: 1rem 0;
 }
 
-/* End Blog */
+/* article section ends */
 
 
-/* Start Footer */
 
-/* call */
+/* footer section starts */
+
+/* call sections starts */
 .footer-cta {
     border-bottom: 1px solid #373636;
     padding: 0px 0 40px 0;
@@ -655,7 +654,7 @@ section {
 }
 
 .single-cta i {
-    color: #0ac05e;
+    color: var(--main-color);
     font-size: 30px;
     float: left;
     margin-top: 8px;
@@ -679,7 +678,7 @@ section {
     text-transform: none;
 }
 
-/* end call */
+/* call section ends */
 
 
 .footer .container {
@@ -719,7 +718,7 @@ section {
 }
 
 
-/* follow us */
+/* follow us starts */
 
 .footer-section {
     background: #151414;
@@ -742,7 +741,7 @@ section {
     line-height: 28px;
 }
 
-/* end follow us */
+/* follow us ends */
 
 
 .footer-col h4 {
@@ -759,7 +758,7 @@ section {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #0ac05e;
+    background-color: var(--main-color);
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -821,7 +820,7 @@ section {
 }
 
 .copyright-text p a {
-    color: #0ac05e;
+    color: var(--main-color);
 }
 
 .footer-menu li {
@@ -830,7 +829,7 @@ section {
 }
 
 .footer-menu li:hover a {
-    color: #0ac05e;
+    color: var(--main-color);
 }
 
 .footer-menu li a {
@@ -838,11 +837,11 @@ section {
     color: #878787;
 }
 
-/* End Footer */
+/* footer section ends */
 
 
 
-/* Start Responsive CSS */
+/* responsive css starts */
 
 /* media queries  */
 @media (max-width: 991px) {
@@ -911,4 +910,4 @@ section {
     }
 }
 
-/* End Responsive CSS */
+/* responsive */
